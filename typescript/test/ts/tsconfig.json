@@ -1,0 +1,10 @@
+{
+    "extends" : "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir" : "../js"
+    },
+    //"baseURL": ".",
+    "include": ["~/src", "~/test", "**/*.ts"],
+    "exclude": ["**/node_modules", "**/.*/"]
+    
+}

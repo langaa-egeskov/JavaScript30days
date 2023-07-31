@@ -1,0 +1,17 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "practicing typescript on leetcode",
+  "main": "ts-day-05.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/tap": "^15.0.8",
+    "tap": "^16.3.7",
+    "typescript": "^5.1.3"
+  }
+}

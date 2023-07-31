@@ -1,0 +1,1 @@
+newearth@NewEarths-MacBook-Pro ts % npx tsc -p ./tsconfig.json

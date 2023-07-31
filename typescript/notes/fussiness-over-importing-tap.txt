@@ -1,0 +1,7 @@
+also had some fuss importing tap 
+I had to install @types/tap via npm 
+using 
+import tap from 'tap' 
+caused complaints from typescript
+import * as tap from 'tap' 
+was sucessfull but not sure why

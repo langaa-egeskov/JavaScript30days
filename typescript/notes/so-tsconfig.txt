@@ -1,0 +1,42 @@
+Thought my tsconfig was broken, but if running tsc with a specific file that is 
+apparently just expected behavior.
+
+note that everything is working in vscode if run directely from 
+the typescript/
+typescript
+    |__node_modules
+    |__notes
+    |__src
+    |__test
+    |__tsconfig.json
+    |__package.json
+
+What I should have read first
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+works find to just pass the -target es on the command line like so 
+npx tsc --target es file.ts
+
+
+Helpful SO
+https://stackoverflow.com/questions/56808741/how-to-keep-es6-syntax-when-transpiling-with-typescript
+
+Your file tsconfig.json is ignored when you specify app.ts in the command line.
+
+In tsconfig.json, add a section exclude after the compiler options:
+
+{
+  "compilerOptions": {
+    ...
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
+Then, just run: tsc.
+
+See also the documentation:
+
+Using tsconfig.json
+By invoking tsc with no input files […]
+By invoking tsc with no input files and a --project (or just -p) command line option […]
