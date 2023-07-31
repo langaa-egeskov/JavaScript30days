@@ -1,7 +1,7 @@
 Thought my tsconfig was broken, but if running tsc with a specific file that is 
-apparently just expected behavior.
+apparently just expected behavior. (it gets ignored)
 
-note that everything is working in vscode if run directely from 
+note that everything is working in vscode if run directly from 
 the typescript/
 typescript
     |__node_modules
@@ -15,7 +15,7 @@ What I should have read first
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
 works find to just pass the -target es on the command line like so 
-npx tsc --target es file.ts
+npx tsc --target esnext file.ts
 
 
 Helpful SO
