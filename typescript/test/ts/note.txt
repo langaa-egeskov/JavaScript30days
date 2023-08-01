@@ -1,1 +1,24 @@
-newearth@NewEarths-MacBook-Pro ts % npx tsc -p ./tsconfig.json
+Examples
+
+$ npx tsc -p ./tsconfig.json
+
+# have tsc convert .ts to js and put it in the right place given
+you are executing from root directory and have subdirectory
+src. src contains subdirectories js and ts.
+root
+    |src
+        |js
+        |ts
+$ npx tsc --target esnext --outDir src/js src/ts/file.ts
+
+run the tap test for file.js like this
+node test/js/file.test.js
+
+
+Questions
+- does it make sense to write the tests in typescript
+- what is reason for synthetic import error need to read
+on what is a synthetic default import
+index.d.ts(947, 1): This module is declared with 'export =', 
+and can only be used with a default import when using the 
+'allowSyntheticDefaultImports' flag.
